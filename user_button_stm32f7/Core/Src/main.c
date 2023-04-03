@@ -18,7 +18,6 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "stdbool.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -90,10 +89,10 @@ int main(void)
   /* Initialize all configured peripherals */
   /* USER CODE BEGIN 2 */
   BSP_LED_Init(LED1);
-  BSP_LED_Init(LED2);
+  BSP_LED_Init(LED2);    // Inicializar leds
   BSP_LED_Init(LED3);
-  BSP_PB_Init(BUTTON_USER, GPIO_MODE_INPUT);
-  bool ePul = false;
+  BSP_PB_Init(BUTTON_USER, GPIO_MODE_INPUT);   // inicializar boton como Entrada
+  bool ePul = false;                           // crear variable booleana
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -101,12 +100,12 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-	  if(BSP_PB_GetState(BUTTON_USER)==true){
+	  if(BSP_PB_GetState(BUTTON_USER)==true){    // boton pulsado
 	  	  ePul = !ePul;
 	  }
 	  if(ePul == 1){
 
-	   	 		BSP_LED_On(LED1);
+	   	 		BSP_LED_On(LED1);               // secuencia
 	   	 		BSP_LED_Off(LED2);
 	   	 		BSP_LED_Off(LED3);
 	   	 		HAL_Delay(2000);
