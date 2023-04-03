@@ -474,7 +474,7 @@ int main(void)
 	   	 		BSP_LED_Off(LED1);
  80005ea:	2000      	movs	r0, #0
  80005ec:	f000 f986 	bl	80008fc <BSP_LED_Off>
-	   	 		BSP_LED_Off(LED2);
+	   	 		BSP_LED_Off(LED2);  // se apagan los leds
  80005f0:	2001      	movs	r0, #1
  80005f2:	f000 f983 	bl	80008fc <BSP_LED_Off>
 	   	 	 	BSP_LED_Off(LED3);

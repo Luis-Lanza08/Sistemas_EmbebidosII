@@ -1,0 +1,2 @@
+../Drivers/delays/delay.c:10:8:delayInit	16	static
+../Drivers/delays/delay.c:15:10:delayRead	16	static

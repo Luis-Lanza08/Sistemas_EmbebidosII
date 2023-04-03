@@ -121,7 +121,7 @@ int main(void)
 	   	 		HAL_Delay(2000);
 	  } else {
 	   	 		BSP_LED_Off(LED1);
-	   	 		BSP_LED_Off(LED2);
+	   	 		BSP_LED_Off(LED2);  // se apagan los leds
 	   	 	 	BSP_LED_Off(LED3);
 	   	 	}
     /* USER CODE BEGIN 3 */
